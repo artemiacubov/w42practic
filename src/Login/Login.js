@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import imglogo from './assets/reacticon.png';
 import './Login.css'
 
 const Login = () => {
@@ -34,10 +33,6 @@ const Login = () => {
     return (
         <>
             <header className="header">
-                <img src={imglogo} alt="123" className="header-img" />
-                <div className="header-div">
-                    <p className="header-p">ReactApp</p>
-                </div>
             </header>
             <div className="main-div">
                 <div>
