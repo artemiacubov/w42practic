@@ -1,5 +1,6 @@
 import React from 'react';
 import imglogo from './assets/reacticon.png';
+import './Home.css'
 
 const Home = () => {
   return (
@@ -10,6 +11,9 @@ const Home = () => {
             <p className="header-p">ReactApp</p>
         </div>
     </header>
+    <div className="fullscreen-div">
+        2
+    </div>
 </>
   );
 };
