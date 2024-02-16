@@ -32,12 +32,12 @@ const Login = () => {
 
     return (
         <>
-            <header className="header">
+            <header className="header-log">
             </header>
-            <div className="main-div">
+            <div className="main-div-log">
                 <div>
                     <form onSubmit={handleExport}>
-                        <p className="field">
+                        <p className="field-log">
                             <input
                                 type="text"
                                 name="login"
@@ -46,7 +46,7 @@ const Login = () => {
                                 onChange={handleLoginChange}
                             />
                         </p>
-                        <p className="field">
+                        <p className="field-log">
                             <input
                                 type="password"
                                 name="password"
@@ -55,7 +55,7 @@ const Login = () => {
                                 onChange={handlePasswordChange}
                             />
                         </p>
-                        <p className="submit">
+                        <p className="submit-log">
                             <button type="submit" name="submit">
                                 Войти
                             </button>
