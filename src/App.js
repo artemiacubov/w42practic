@@ -3,17 +3,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './Login/Login';
 import Home from './Header/Home/Home';
 import Profile from './Header/Profile/Profile';
-import Header from './Header/Header';
+import Header from './Header/Layout';
 
 function App() {
     return (
         <Router>
         <Routes>
-            <Route path="/" element={<Header />}> {/* Основной маршрут для хедера */}
-                <Route path="/" element={<Login />} /> {/* Путь для страницы Login */}
-                <Route path="/home" element={<Home />} /> {/* Путь для страницы Home */}
-                <Route path="/profile" element={<Profile />} /> {/* Путь для страницы Profile */}
-            </Route>
+            <Route path='/*' element={<Header />} />
         </Routes>
     </Router>
     );

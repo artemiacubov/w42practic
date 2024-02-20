@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './Header.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './Layout.css';
 import icon3 from './assets/icon3.jpg';
 import icon2 from './assets/icon2.jpg';
 import icon1 from './assets/icon1.jpg';
@@ -39,16 +39,18 @@ const Header = () => {
           <p className="header-p-lay">{currentWord[0]}</p>
           <p className="header-p-lay">{currentWord[1]}</p>
         </div>
+        <nav>
+          <ul>
+            <li><Link to="/home">Home</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
+          </ul>
+        </nav>
       </header>
-      <div className="fullscreen-div-lay">
-
-      <Router>
-                <Routes>
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/profile" element={<Profile />} />
-                </Routes>
-        </Router>
-        
+      <div className="fullscreen-div-lay"> 
+      <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/profile" element={<Profile icon={icon} />} />
+        </Routes>
       </div>
     </>
   );
