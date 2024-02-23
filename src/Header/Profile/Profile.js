@@ -1,6 +1,7 @@
 import React from 'react';
 import './Profile.css'
-function Profile({icon}) {
+function Profile({icon},{currentWord}) {
+    console.log(currentWord);
     return (
         <>
             <div className='main-div-prof'>
@@ -13,8 +14,8 @@ function Profile({icon}) {
                                 <img src={icon} alt="icon" className="img-prof"/>
                             </div>
                             
-                            <div className='content-container'>
-                                123
+                            <div className='icon-text-container-prof'>
+                            {currentWord}
                             </div>
 
                         </div>

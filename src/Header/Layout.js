@@ -30,9 +30,10 @@ const Header = () => {
     setIcon(getRandomIcon());
   }, []);
 
+  console.log(currentWord);
+
   return (
     <>
-    {/* не забыть сделать так чтобы app был основным хедером а все остальеные компоненты открывались через роутер */}
       <header className="header-lay">
         <img src={icon} alt="icon" className="header-img-lay" />
         <div className="header-div-lay">
@@ -49,7 +50,7 @@ const Header = () => {
       <div className="fullscreen-div-lay"> 
       <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/profile" element={<Profile icon={icon} />} />
+          <Route path="/profile" element={<Profile icon={icon} currentWord={currentWord} />} />
         </Routes>
       </div>
     </>
