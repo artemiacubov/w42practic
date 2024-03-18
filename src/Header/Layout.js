@@ -7,30 +7,32 @@ const Header = () => {
   
   return (
     <>
-      <header className={styles.header}>
-        
-      </header>
-      <div className={styles.fullscreen_div}> 
+    <div>
+        <header className={styles.header}>
+          2133232
+        </header>
+        <div className={styles.fullscreen_div}> 
 
-        <div className={styles.div_one}>
-          <nav>
-            <ul>
-              <li><Link to="/home">Home</Link></li>
-            </ul>
-          </nav>
+          <div className={styles.div_one}>
+            <nav>
+              <ul>
+                <li><Link to="/home">Home</Link></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div className={styles.div_two}> 
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path='/*' element={<Home />} />
+            </Routes>
+          </div>
+
+          <div className={styles.div_one}>
+            123231
+          </div>
+      
         </div>
-
-        <div className={styles.div_two}> 
-          <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path='/*' element={<Home />} />
-          </Routes>
-        </div>
-
-        <div className={styles.div_three}>
-
-        </div>
-     
       </div>
     </>
   );
