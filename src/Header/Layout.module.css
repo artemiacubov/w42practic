@@ -1,6 +1,7 @@
   .header{
     background-color: rgb(206, 233, 235);
     padding: 0.6%;
+    font-size: 100%;
   }
   .header_div{
     width: 100%;
@@ -26,9 +27,34 @@
     background-color: rgb(0, 110, 110);
   }
   .div_one:nth-child(1){
+    display: flex;
+    justify-content: center;
     width: 10%;
-    background-color: blue;
+    background-color: rgb(146, 146, 214);
+    position: relative;
+    overflow: hidden;
   }
   .div_two{
     width: 80%;
+  }
+  .link_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3%;
+    width: 100%;
+    font-size: 100%;
+    position: absolute;
+    left: -50%; 
+    background-color: rgb(146, 146, 214);
+    transition: left 0.5s ease;
+  }
+  
+  .link_div:hover {
+    left: 0; 
+  }
+  
+  .link_div a {
+    text-decoration: none; 
+    color: inherit; 
   }
