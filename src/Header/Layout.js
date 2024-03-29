@@ -27,7 +27,7 @@ const Header = () => {
         onMouseEnter={handleMouseEnter} 
         onMouseLeave={handleMouseLeave}
       >
-        <Link to="/home">Home</Link>
+        <Link to="/home" className={styles.link}>Home</Link>
       </div>
       <div></div>
       <div></div>

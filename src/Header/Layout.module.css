@@ -1,5 +1,5 @@
   .header{
-    background-color: rgb(206, 233, 235);
+    background-color: rgb(150, 212, 202);
     padding: 0.6%;
     font-size: 100%;
   }
@@ -15,6 +15,7 @@
     color: rgb(37, 150, 190);
     margin-bottom: 5px;
   }
+
   .fullscreen_div{
     display: flex;
     background-color: rgb(231, 239, 240);
@@ -22,38 +23,43 @@
     width: 100%;
     height: 100%;
 }
+
   .div_one:nth-last-child(1){
     width: 10%;
-    background-color: rgb(0, 110, 110);
+    background-color: rgb(177, 209, 204);
   }
   .div_one:nth-child(1){
     display: flex;
     justify-content: center;
     width: 10%;
-    background-color: rgb(146, 146, 214);
+    background-color: rgb(177, 209, 204);
     position: relative;
     overflow: hidden;
   }
   .div_two{
     width: 80%;
   }
+
+  .link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
   .link_div{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3%;
-    width: 100%;
+    width: 80%;
     font-size: 100%;
-    position: absolute;
-    left: -50%; 
-    background-color: rgb(146, 146, 214);
-    transition: left 0.5s ease;
+    background-color: rgb(177, 209, 204);
+    border: 1px black solid;
   }
-  
   .link_div:hover {
     left: 0; 
   }
-  
   .link_div a {
     text-decoration: none; 
     color: inherit; 
