@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Header/Layout';
-import Home from './Header/Home/Home';
+import Layout from './Layout/Layout';
+import Home from './Layout/Components/Home';
 
 function App() {
     return (
         <Router>
         <Routes>
-            <Route path='/*' element={<Header />} />
+            <Route path='/*' element={<Layout />} />
         </Routes>
     </Router>
     );
